@@ -20,7 +20,7 @@ nav a {
 
 nav a:hover {
     background-color: #434343;
-    color: #EBEBEE;
+    color: #ECE2B2;
     padding: 20px;
     border-radius: 5px;
 }
@@ -53,8 +53,9 @@ h1 {
     font-size: 52px !important;
 }
 
-h3 {
+.h3 {
     font-size: 38px !important;
+    color: #ECE2B2;
 }
 
 h5 {
@@ -69,7 +70,7 @@ h5 {
 
 #learnMoreBtn:hover , #contactBtn:hover {
     background-color: #434343;
-    color: #EBEBEE;
+    color: #ECE2B2;
     border: black solid 1px;
 }
 
@@ -90,6 +91,9 @@ img {
     width: 85%;
     border: 1px solid black;
     border-radius: 10px;
+    margin-bottom: 120px;
+    background-image: linear-gradient(45deg, #434343, #000000);
+    color: #EBEBEE;
 }
 
 .about-me-p {
@@ -104,6 +108,7 @@ img {
     margin-left: 10px;
     border-bottom: solid 2px black;
     letter-spacing: .04rem;
+    color: #ECE2B2;
 }
 
 hr {
@@ -115,6 +120,7 @@ hr {
 
 b {
     font-size: 25px;
+    color: #FFA9C4;
 }
 
 @media screen and (max-width: 768px) {
@@ -134,3 +140,6 @@ b {
     }
 }
 
+.test {
+    background-color: yellow;
+}
