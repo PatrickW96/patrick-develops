@@ -87,6 +87,11 @@ img {
     transform: scale(1.05);
 }
 
+.about-me-section {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
 .about-me {
     width: 85%;
     border: 1px solid black;
@@ -94,21 +99,6 @@ img {
     margin-bottom: 100px;
     background-image: linear-gradient(45deg, #434343, #000000);
     color: #EBEBEE;
-}
-
-.about-me-last {
-    width: 85%;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-image: linear-gradient(45deg, #434343, #000000);
-    color: #EBEBEE;
-}
-
-.about-me-p {
-    line-height: 1.6rem;
-    letter-spacing: .03rem;
-    text-align: left;
-    font-size: 18px;
 }
 
 .about-title {
@@ -119,8 +109,23 @@ img {
     color: #ECE2B2;
 }
 
+.about-me-p {
+    line-height: 1.6rem;
+    letter-spacing: .03rem;
+    text-align: left;
+    font-size: 18px;
+}
+
+.about-me-last {
+    font-size: 28px !important;
+    margin-left: 10px;
+    border-bottom: solid 2px black;
+    letter-spacing: .04rem;
+    color: #ECE2B2;
+}
+
 hr {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 60px;
     border: 2px solid #000000;
     border-radius: 2px;
@@ -148,6 +153,6 @@ b {
     }
 
     .about-me {
-        margin-bottom: 25px;
+        margin-bottom: 0;
     }
 }
