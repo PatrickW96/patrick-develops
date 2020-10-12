@@ -9,7 +9,7 @@
 
 .nav-link:hover {
     background-color: #434343;
-    color: #EBEBEE;
+    color: #ECE2B2;
     padding: 20px;
     border-radius: 5px;
 }
@@ -63,13 +63,13 @@ h5 {
 }
 
 #learnMoreBtn , #contactBtn {
-    border: black solid 1px;
+    border: #ECE2B2 solid 1px;
     border-radius: 30px;
-    color: #434343;
+    color: #ECE2B2;
 }
 
 #learnMoreBtn:hover , #contactBtn:hover {
-    background-color: #434343;
+    background-color: #505050;
     color: #ECE2B2;
     border: black solid 1px;
 }
@@ -83,10 +83,6 @@ img {
     height: 280px;
 }
 
-.img-responsive:hover {
-    transform: scale(1.05);
-}
-
 .about-me-section {
     background-color: #eee;
     border-radius: 10px;
@@ -96,7 +92,7 @@ img {
     width: 85%;
     border: 1px solid black;
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background-image: linear-gradient(45deg, #434343, #000000);
     color: #EBEBEE;
 }
@@ -136,6 +132,17 @@ b {
     color: #FFA9C4;
 }
 
+.projects {
+    border: 1px solid black;
+    padding: 25px;
+    min-width: 920px;
+    min-height: 500px;
+}
+
+.fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 768px) {
 
     .img-responsive {
@@ -148,11 +155,15 @@ b {
     }
 
     .about-me {
-        margin-top: 15%;
+        margin-top: 5%;
         width: 100% !important;
     }
 
     .about-me {
         margin-bottom: 0;
+    }
+
+    .portfolio {
+        width: 100%;
     }
 }
