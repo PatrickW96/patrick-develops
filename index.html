@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/c42f1ec8f7.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body class="bg-success">
 
     <!-- START MAIN HEADER -->
         <header class="background">    
@@ -75,7 +75,7 @@
         </svg>
 
 <!-- START PAGE MAIN CONTENT -->
-        <main class="container about-me-container">
+        <main class="container-fluid about-me-container">
     <!-- START ABOUT ME SECTION -->
             <section class="about-me-section row">
                 <h2 class="text-center my-5 col-12"><span class="heading">About Me</span></h2>
@@ -156,25 +156,56 @@
             <hr>
 
         <!-- START RECENT PROJECTS CAROUSEL -->
-            <div class="container-fluid portfolio text-center mb-3">
+            <h2 class="text-center my-5 col-12"><span class="heading">Recent Projects</span></h2>
+            <div class="container portfolio text-center mb-3 p-4">
                 <section class="row justify-content-center"> 
-
-                    <h2 class="text-center my-5 col-12"><span class="heading">Recent Projects</span></h2>
-
                     <a href="https://patrickw96.github.io/plan-ahead/" class="col-12 m-md-4 my-3 img-responsive">
-                        <img class="col-12 img-responsive projects" src="images/plan-ahead.jpg" alt="Screenshot of stopwatch made with HTML, CSS , and JavaScript." width="300" height="300">
+                        <img class="col-11 img-responsive projects p-3" src="images/plan-ahead.jpg" alt="Screenshot of stopwatch made with HTML, CSS , and JavaScript." width="300" height="300">
                     </a>
 
-                    <i class="m-1 fas fa-arrow-alt-circle-left col-3"></i>
-                    <p class="m-1 h2 col-5 text-center">Password Generator</p>
-                    <i class="m-1 fas fa-arrow-alt-circle-right col-3"></i>
+                    <i class="m-1 carousel-functions fas fa-arrow-alt-circle-left col-3"></i>
+                    <p class="m-1 carousel-name h2 col-4 text-center">Password Generator</p>
+                    <i class="m-1 carousel-functions fas fa-arrow-alt-circle-right col-3"></i>
 
                 </section>
             </div> 
         <!-- END RECENT PROJECTS CAROUSEL -->
 
-            <section>
-                <h2>Connect with Me </h2>
+        <hr>
+
+        <!-- Start Main Contact Container -->
+            <div class="container p-3 m-auto w-75">
+                <header class="row">
+                    <h2 class="col text-center"><span class="heading p-2 m-2">Contact</span></h2>
+                </header>
+
+                <section>
+                    <form class="form">
+                        <section class="form-group row mx-1 w-75">
+                            <div class="col-md-10">
+                                <label>Name</label>
+                                <input type="name" class="form-control" placeholder="Name">
+                            </div>
+                        </section>
+
+                        <section class="form-group row mx-1 w-75">
+                            <div class="col-md-10">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </section>
+
+                        <section class="form-group row mx-1 w-75">
+                            <div class="col-md-10">
+                                <label>Leave a Message</label>
+                                <textarea class="form-control" input type="leave a message" rows="5" placeholder="Leave a Message"></textarea></textarea>
+                            </div>
+                        </section>
+
+                        <button rold="button" id="submitBtn" class="btn home-card p-2 my-3 mx-1">Learn More</button>
+                    </form>
+                </section>
+                </div>
             </section>
         </main>
 

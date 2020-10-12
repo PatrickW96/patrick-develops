@@ -62,25 +62,29 @@ h5 {
     font-size: 26px !important;
 }
 
-#learnMoreBtn , #contactBtn {
+#learnMoreBtn , #contactBtn , #submitBtn{
     border: #ECE2B2 solid 1px;
     border-radius: 30px;
     color: #ECE2B2;
 }
 
-#learnMoreBtn:hover , #contactBtn:hover {
+#learnMoreBtn:hover , #contactBtn:hover , #submitBtn:hover {
     background-color: #505050;
     color: #ECE2B2;
     border: black solid 1px;
 }
 
-#learnMoreBtn:focus , #contactBtn:focus {
+#learnMoreBtn:focus , #contactBtn:focus , #submitBtn:focus {
     outline: 0;
 }
 
 img {
     border-radius: 40px;
     height: 280px;
+}
+
+.container-fluid {
+    width: 90%;
 }
 
 .about-me-section {
@@ -147,6 +151,11 @@ b {
     font-size: 3rem;
 }
 
+.form {
+    display: grid;
+    place-items: center;
+}
+
 @media screen and (max-width: 768px) {
 
     .img-responsive {
@@ -166,5 +175,17 @@ b {
 
     .projects {
         height: 100%;
-    }    
+    }   
+    
+    .carousel-functions {
+        font-size: 2rem;
+    }
+    
+    .carousel-name {
+        font-size: 1rem;
+    }  
+    
+    .form-group {
+        width: 135% !important;
+    }
 }
