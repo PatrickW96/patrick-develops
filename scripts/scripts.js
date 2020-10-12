@@ -31,4 +31,8 @@ $(document).ready(function() {
             $('#fact-six').addClass('animate__animated animate__bounceInRight')
         };
     };
+
+    if ($(window).width() == 786) {
+        $('.placeholder').remove();
+    }
 });

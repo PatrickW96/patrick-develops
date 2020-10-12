@@ -132,11 +132,15 @@ b {
     color: #FFA9C4;
 }
 
-.projects {
+.portfolio {
     border: 1px solid black;
     padding: 25px;
-    min-width: 920px;
-    min-height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects {
+    height: 470px;
 }
 
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
@@ -156,14 +160,11 @@ b {
 
     .about-me {
         margin-top: 5%;
-        width: 100% !important;
-    }
-
-    .about-me {
+        width: 90% !important;
         margin-bottom: 0;
     }
 
-    .portfolio {
-        width: 100%;
-    }
+    .projects {
+        height: 100%;
+    }    
 }
