@@ -139,12 +139,11 @@ b {
 .portfolio {
     border: 1px solid black;
     padding: 25px;
-    width: 100%;
     border-radius: 10px;
 }
 
 .projects {
-    height: 470px;
+    height: 40rem;
 }
 
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
@@ -188,4 +187,9 @@ b {
     .form-group {
         width: 135% !important;
     }
+
+    .fig {
+        width: 110%;
+        margin: auto;
+    }  
 }
