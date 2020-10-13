@@ -63,20 +63,20 @@ h5 {
     font-size: 26px !important;
 }
 
-#learnMoreBtn , #contactBtn , #submitBtn{
+.button{
     border: #ECE2B2 solid 1px;
     border-radius: 30px;
     color: #ECE2B2;
     background-color: #434343;
 }
 
-#learnMoreBtn:hover , #contactBtn:hover , #submitBtn:hover {
+.button:hover {
     background-color: #505050;
     color: #ECE2B2;
     border: black solid 1px;
 }
 
-#learnMoreBtn:focus , #contactBtn:focus , #submitBtn:focus {
+.button:focus {
     outline: 0;
 }
 
@@ -148,6 +148,7 @@ hr {
 
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
     font-size: 4rem;
+    color: #ECE2B2;
 }
 
 .form {
@@ -213,6 +214,10 @@ hr {
     .form-group {
         width: 170% !important;
     }
+
+    #submitBtn {
+        margin-left: 50px;
+    }    
 }
 
 @media screen and (max-width: 320px) {

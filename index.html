@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/c42f1ec8f7.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="bg-info">
+    <body class="bg-info w-100">
 
     <!-- START MAIN HEADER -->
         <header class="background">    
@@ -129,21 +129,21 @@
         <!-- START RECENT PROJECTS CAROUSEL -->
             <div class="form">
                 <h2 class="text-center my-md-5"><span class="heading">Recent Projects</span></h2>
-                <img class="img-responsive w-md-100 my-3 p-0 carousel-card" src="images/plan-ahead.jpg" alt="Screenshot of a recent todo planner I created.">
+                <img class="img-responsive w-md-100 my-3 p-0 carousel-card" id="carousel" src="images/weather.jpg" alt="Screenshot of a recent todo planner I created.">
             </div>
 
             <div class="container-fluid form mb-5">
                 <div class="row">
-                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-left col-2" id="prev"></i>
-                    <p class="m-1 carousel-name h2 col-7 text-center"><b>Password Generator</b></p>
-                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-right col-2" id="next"></i>
+                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-left col-md-2" id="prev"></i>
+                    <figcaption class="m-1 carousel-name h2 col-md-7 text-center" id="projectName"><b></b></figcaption>
+                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-right col-md-2" id="next"></i>
                 </div>
             </div>
         <!-- END RECENT PROJECTS CAROUSEL -->
 
         <hr>
 
-        <!-- Start Main Contact Container -->
+        <!-- Start Contact Input -->
             <div class="container p-3 m-auto w-75">
                 <header class="row">
                     <h2 class="col form mr-md-5"><span class="heading p-2">Contact</span></h2>
@@ -154,30 +154,30 @@
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
                                 <label class="label">Name</label>
-                                <input type="name" class="form-control" placeholder="Name">
+                                <input type="name" class="form-control form" placeholder="Name">
                             </div>
                         </section>
 
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
                                 <label class="label">Email</label>
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control form" placeholder="Email">
                             </div>
                         </section>
 
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
                                 <label class="label">Leave a Message</label>
-                                <textarea class="form-control" input type="leave a message" overflow="scroll" rows="5" placeholder="Leave a Message"></textarea>
+                                <textarea class="form-control form" input type="leave a message" overflow="scroll" rows="5" placeholder="Leave a Message"></textarea>
                             </div>
                         </section>
-
                     </form>
 
                     <button role="button" id="submitBtn" class="btn p-2 home-card">Submit</button>
+
                 </section>
-                </div>
-            </section>
+            </div>
+        <!-- End Contact Input -->
         </main>
 
         <footer>
