@@ -142,7 +142,7 @@ hr {
 }
 
 .carousel-name {
-    margin-right: 20px !important;
+    margin-right: 20px;
 }  
 
 
@@ -171,7 +171,7 @@ hr {
 
 
 #submitBtn {
-    margin-left: 125px;
+    margin-left: 82px;
     margin-top: 10px;
 }
 
@@ -194,6 +194,10 @@ hr {
         width: 90% !important;
     }
     
+    .about-me-last {
+        margin-bottom: 15px !important;
+    }
+
     .carousel-functions {
         font-size: 2.5rem;
     }
@@ -209,4 +213,10 @@ hr {
     .form-group {
         width: 170% !important;
     }
+}
+
+@media screen and (max-width: 320px) {
+    .carousel-name {
+        font-size: 1.3rem;
+    }  
 }
