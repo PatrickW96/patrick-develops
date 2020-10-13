@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/c42f1ec8f7.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="bg-success">
+    <body class="bg-info">
 
     <!-- START MAIN HEADER -->
         <header class="background">    
@@ -75,28 +75,21 @@
         </svg>
 
 <!-- START PAGE MAIN CONTENT -->
-        <main class="container-fluid about-me-container">
+        <main class="container-fluid">
     <!-- START ABOUT ME SECTION -->
-            <section class="about-me-section row">
+            <section class="about-me-section row form">
                 <h2 class="text-center my-5 col-12"><span class="heading">About Me</span></h2>
 
                 <div class="container about-me col-md-5 hide" id="fact-one">
-                    <b>#</b><span class="about-title">WebpageDesign</span>
+                    <b class="hash">#</b><span class="about-title">WebpageDesign</span>
                     <p class="about-me-p m-3 p-1">
                         My name is Patrick but my friends call me Pat. I am a full stack web devloper in the making. This portfolio page will give you a glimpse of 
                         how I can put a webspage together using css, css frameworks and other extensions. 
                     </p>
                 </div>
 
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-
                 <div class="container about-me col-md-5 hide" id="fact-two">
-                    <b>#</b><span class="about-title">Programmer</span>
+                    <b class="hash">#</b><span class="about-title">Programmer</span>
                     <p class="about-me-p m-3 p-1">
                         I'm a huge programming geek! I program in the JavaScript language and like libraries and enjoy
                         manipulating DOM objects to make websites more appealing to users.  
@@ -104,49 +97,27 @@
                 </div>
 
                 <div class="container about-me col-md-5 hide" id="fact-three">
-                    <b>#</b><span class="about-title">PatDevelops</span>
+                    <b class="hash">#</b><span class="about-title">PatDevelops</span>
                     <p class="about-me-p m-3 p-1">
                         I love developing websites. Every day I strive to be a better developer than I was the day before. I fan of pumpkin spice coffee, let's get together and  
                         find the perfect layout for your business.
                     </p>
                 </div>
 
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-
                 <div class="container about-me col-md-5 hide" id="fact-four">
-                    <b>#</b><span class="about-title">MyGoal</span>
+                    <b class="hash">#</b><span class="about-title">MyGoal</span>
                     <p class="about-me-p m-3 p-1">
                         My goal is get these jobs done in a timley manner and at an affordle price. Let the guy who loves what they do take car of your webpage.
                     </p>
                 </div>
-
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-
 
                 <div class="container about-me col-md-5 hide" id="fact-five">
-                    <b>#</b><span class="about-title">WebDevOriginal</span>
+                    <b class="hash">#</b><span class="about-title">WebDevOriginal</span>
                     <p class="about-me-p m-3 p-1">
                         My goal is get these jobs done in a timley manner and at an affordle price. Let the guy who loves what they do take car of your webpage.
                     </p>
                 </div>
 
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-                <div class="placeholder container col-md-5">
-                    <p></p>
-                </div>
-                
                 <div class="container about-me col-md-5 hide" id="fact-six">
                     <img class="img-responsive" src="images/example-12.png" alt="digial drawing of a man holding paper by a computer">
                 </div>
@@ -156,16 +127,18 @@
             <hr>
 
         <!-- START RECENT PROJECTS CAROUSEL -->
-            <h2 class="text-center my-5"><span class="heading">Recent Projects</span></h2>
-                <figure class="no-gutter"> 
-                    <a href="https://patrickw96.github.io/plan-ahead/" class="m-md-4 my-3">
-                        <img class="img-responsive projects container portfolio text-center mb-3 p-4" src="images/plan-ahead.jpg" alt="Screenshot of a recent todo planner I worked created.">
-                    </a>
-                </figure>
+            <div class="form">
+                <h2 class="text-center my-md-5"><span class="heading">Recent Projects</span></h2>
+                <img class="img-responsive w-md-100 my-3 p-0 carousel-card" src="images/plan-ahead.jpg" alt="Screenshot of a recent todo planner I created.">
+            </div>
 
-                <!-- <i class="m-1 carousel-functions fas fa-arrow-alt-circle-left col-3"></i>
-                <p class="m-1 carousel-name h2 col-4 text-center">Password Generator</p>
-                <i class="m-1 carousel-functions fas fa-arrow-alt-circle-right col-3"></i> -->
+            <div class="container-fluid form mb-5">
+                <div class="row">
+                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-left col-2" id="prev"></i>
+                    <p class="m-1 carousel-name h2 col-7 text-center"><b>Password Generator</b></p>
+                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-right col-2" id="next"></i>
+                </div>
+            </div>
         <!-- END RECENT PROJECTS CAROUSEL -->
 
         <hr>
@@ -173,34 +146,35 @@
         <!-- Start Main Contact Container -->
             <div class="container p-3 m-auto w-75">
                 <header class="row">
-                    <h2 class="col form mr-md-5"><span class="heading p-2 m-2">Contact</span></h2>
+                    <h2 class="col form mr-md-5"><span class="heading p-2">Contact</span></h2>
                 </header>
 
                 <section>
                     <form class="form">
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
-                                <label>Name</label>
+                                <label class="label">Name</label>
                                 <input type="name" class="form-control" placeholder="Name">
                             </div>
                         </section>
 
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
-                                <label>Email</label>
+                                <label class="label">Email</label>
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
                         </section>
 
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
-                                <label>Leave a Message</label>
-                                <textarea class="form-control" input type="leave a message" rows="5" placeholder="Leave a Message"></textarea></textarea>
+                                <label class="label">Leave a Message</label>
+                                <textarea class="form-control" input type="leave a message" overflow="scroll" rows="5" placeholder="Leave a Message"></textarea>
                             </div>
                         </section>
 
-                        <button rold="button" id="submitBtn" class="btn home-card p-2 my-3 mx-1">Learn More</button>
                     </form>
+
+                    <button role="button" id="submitBtn" class="btn p-2 home-card">Submit</button>
                 </section>
                 </div>
             </section>

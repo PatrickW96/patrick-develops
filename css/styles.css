@@ -29,6 +29,7 @@ nav a:hover {
     font-size: 36px;
     border-bottom: solid 2px #000000;
     border-radius: 2px;
+    margin: 3% auto;
 }
 
 .hide {
@@ -66,6 +67,7 @@ h5 {
     border: #ECE2B2 solid 1px;
     border-radius: 30px;
     color: #ECE2B2;
+    background-color: #434343;
 }
 
 #learnMoreBtn:hover , #contactBtn:hover , #submitBtn:hover {
@@ -88,7 +90,7 @@ img {
 }
 
 .about-me-section {
-    background-color: #eee;
+    /* background-color: #eee; */
     border-radius: 10px;
 }
 
@@ -116,14 +118,6 @@ img {
     font-size: 18px;
 }
 
-.about-me-last {
-    font-size: 28px !important;
-    margin-left: 10px;
-    border-bottom: solid 2px black;
-    letter-spacing: .04rem;
-    color: #ECE2B2;
-}
-
 hr {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -131,7 +125,7 @@ hr {
     border-radius: 2px;
 }
 
-b {
+.hash {
     font-size: 25px;
     color: #FFA9C4;
 }
@@ -142,12 +136,18 @@ b {
     border-radius: 10px;
 }
 
-.projects {
+.carousel-card {
     height: 40rem;
+    border-radius: .5%;
 }
 
+.carousel-name {
+    margin-right: 20px !important;
+}  
+
+
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .form {
@@ -155,7 +155,30 @@ b {
     place-items: center;
 }
 
+.label {
+    font-size: 20px;
+    font-weight: 600%;
+    height: 10px;
+}
+
+.form-control {
+    height: 47px;
+}
+
+.form-group {
+    width: 85% !important;
+}
+
+
+#submitBtn {
+    margin-left: 125px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
+    main {
+        width: 99% !important;
+    }
 
     .img-responsive {
         width: 100%;
@@ -167,29 +190,23 @@ b {
     }
 
     .about-me {
-        margin-top: 5%;
+        margin: 5px !important;
         width: 90% !important;
-        margin-bottom: 0;
     }
-
-    .projects {
-        height: 100%;
-    }   
     
     .carousel-functions {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .carousel-name {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }  
+
+    .carousel-card {
+        height: 396px;
+    }
     
     .form-group {
-        width: 135% !important;
+        width: 170% !important;
     }
-
-    .fig {
-        width: 110%;
-        margin: auto;
-    }  
 }

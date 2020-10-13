@@ -6,7 +6,7 @@ $(document).ready(function() {
         var topPosition = $(document).scrollTop();
         console.log(topPosition)
 
-        if (topPosition > 630) {
+        if (topPosition > 730) {
             $('#fact-one').removeClass('hide')
             $('#fact-one').addClass('animate__animated animate__bounceInLeft')
         };
@@ -14,19 +14,19 @@ $(document).ready(function() {
             $('#fact-two').removeClass('hide')
             $('#fact-two').addClass('animate__animated animate__bounceInRight')
         };
-        if (topPosition > 1095) {
+        if (topPosition > 1220) {
             $('#fact-three').removeClass('hide')
             $('#fact-three').addClass('animate__animated animate__bounceInLeft')
         };
-        if (topPosition > 1310) {
+        if (topPosition > 1430) {
             $('#fact-four').removeClass('hide')
             $('#fact-four').addClass('animate__animated animate__bounceInRight')
         };
-        if (topPosition > 1520) {
+        if (topPosition > 1660) {
             $('#fact-five').removeClass('hide')
             $('#fact-five').addClass('animate__animated animate__bounceInLeft')
         };
-        if (topPosition > 1850) {
+        if (topPosition > 1975) {
             $('#fact-six').removeClass('hide')
             $('#fact-six').addClass('animate__animated animate__bounceInRight')
         };
