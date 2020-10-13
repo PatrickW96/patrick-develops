@@ -1,3 +1,7 @@
+body {
+    width: 100vw;
+}
+
 .navbar {
     background: #EBEBEE;
     opacity: .8;
@@ -63,20 +67,20 @@ h5 {
     font-size: 26px !important;
 }
 
-.button{
+.btn{
     border: #ECE2B2 solid 1px;
     border-radius: 30px;
     color: #ECE2B2;
     background-color: #434343;
 }
 
-.button:hover {
+.btn:hover {
     background-color: #505050;
     color: #ECE2B2;
     border: black solid 1px;
 }
 
-.button:focus {
+.btn:focus {
     outline: 0;
 }
 
@@ -139,6 +143,7 @@ hr {
 .carousel-card {
     height: 40rem;
     border-radius: .5%;
+    border: 10px solid black;
 }
 
 .carousel-name {
@@ -204,7 +209,7 @@ hr {
     }
     
     .carousel-name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }  
 
     .carousel-card {
@@ -216,7 +221,7 @@ hr {
     }
 
     #submitBtn {
-        margin-left: 50px;
+        margin-left: 70px;
     }    
 }
 

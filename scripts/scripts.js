@@ -1,14 +1,17 @@
 $(document).ready(function() {
+    let count = 0;
 
+    // Using scroll event to animate elements when user scrolls down the page
     $(window).scroll(scrollAnimation);
-    
-    function createAboutMeCard() {
 
-    };
+    // Next/Prev button click events
+    $('#nextBtn').click(nextBtn);
+    $('#prevBtn').click(prevBtn);
+    
     
     function scrollAnimation() {
         var topPosition = $(document).scrollTop();
-        console.log(topPosition)
+        // console.log(topPosition)
 
         if (topPosition > 730) {
             $('#fact-one').removeClass('hide')
@@ -37,84 +40,77 @@ $(document).ready(function() {
     };
 
     function carousel() {
-        const carouselImagesArray = [
+        const carouselArrayOfObj = [
             {
-                image : 1,
-                projectName : "JavaScript Quiz",
-                source : "images/javascript-quiz.jpg",
-                description : `"JavaScript Quiz" is a quick quiz application build to put your JavaScript knowledge to the test. 50 seconds on the clock..
-                can you beat it? Check it out at the link below.`,
-                appHostSite : "https://patrickw96.github.io/javascript-quiz/"
+                image : {
+                    number : 0,
+                    projectName : "JavaScript Quiz",
+                    source : "images/javascript-quiz.jpg",
+                    description : `"JavaScript Quiz" is a quick quiz application that showcases my ability to manipulate the DOM using Vanilla JS`,
+                    appHostSite : "https://patrickw96.github.io/javascript-quiz/"    
+                }
             }, 
 
             {
-                image : 2,
-                projectName : "What's the Weather?",
-                source : "images/weather.jpg",
-                description : `A weather dashboard application that utilizes "openweatherAPI" to display the  weather and next 5 day forecast for over
-                2000,000 cities.`,
-                appHostSite : "https://patrickw96.github.io/whats-the-weather/"
+                image : {
+                    number : 1,
+                    projectName : "Plan Ahead",
+                    source : "images/plan-ahead.jpg",
+                    description : `"Plan ahead" is a simple daily todo tracker made and coded using jQuery library to manipulate the DOM. The app also utilized
+                    a users local storage to save todo's on refresh.`,
+                    appHostSite : "https://patrickw96.github.io/plan-ahead/"    
+                }
             },
 
             {
-                image : 3,
-                projectName : "Plan Ahead",
-                source : "images/plan-ahead.jpg",
-                description : `A daily to do list application that is build to keep you on track. With color coded time slots, "Plan Ahead" was put together with a busy user in mind.`,
-                appHostSite : "https://patrickw96.github.io/plan-ahead/"
-
+                image : {
+                    number : 2,
+                    projectName : "RandomPW Generator",
+                    source : "images/pwgenerator.jpg",
+                    description : `This app takes a users input (pw length, characters to include/not include) and then creates a unique random password. Then you can click the 
+                    clipboard button to copy the pw to local clipboard.`,
+                    appHostSite : "https://patrickw96.github.io/password-generator/"    
+                }
             },
 
             {
-                image : 4,
-                projectName : "RandomPW",
-                source : "images/pwgenerator.jpg",
-                description : `This app is a random password generator. Choose how many characters and which characters to include then press "Generate" button. Once the password is printed
-                to the screen click to the clipboard to copy.`,
-                appHostSite : "https://patrickw96.github.io/password-generator/"
+                image : {
+                    number : 3,
+                    projectName : "What's the Weather",
+                    source : "images/weather.jpg",
+                    description : `"What's the Weather" is a weather dashboard application created using jQuery. Ajax requests are made to the OpenWeatherApi
+                    based on user search to extract JSON files which were disected and used to populate cards with useful information.`,
+                    appHostSite : "https://patrickw96.github.io/whats-the-weather/"    
+                }
             }
         ];
 
-        if (count == carouselImagesObject.image) {
-            $('#carousel').attr(carouselImagesObject[counter]);
-        }; 
+        return carouselArrayOfObj;
+    };
 
-        if (count > 5) {
+    console.log(carousel()[2].image.description)
+
+    function nextBtn() {
+        count++;
+
+        if (count > 3) {
             count = 0;
+        };
+        console.log(count);
+        console.log(carousel()[count].image.number)
+    };
+
+    function prevBtn() {
+        if (count > 0) {
+            count--;
+        } else {
+            count = 3;
         }
-
-
-        const carouselBox = $('#carousel');
-        let counter = 0; 
-
-        $('#nextBtn').click(nextBtnAdd);
-        $('#prevBtn').click(prevBtnSubtract);
-
-
-        carouselBox.attr(carouselImagesArray[counter]);
+        console.log(count);
+        console.log(carousel()[count].image.number)
     };
 
-    function nextBtnAdd() {
-        counter++;
-
-        if (count == carouselImagesObject.image) {
-            $('#carousel').attr(carouselImagesObject[counter]);
-        }; 
-
-        if (count > 5) {
-            count = 0;
-        };
-    };
-
-    function prevBtnSubtract() {
-        counter--;
-
-        if (count == carouselImagesObject.image) {
-            $('#carousel').attr(carouselImagesObject[counter]);
-        }; 
-
-        if (count > 5) {
-            count = 0;
-        };
-    };
+    if (count == carousel()[count].image.number) {
+        $('#carousel').attr('src' , carousel()[count].image.source);
+    }
 });
