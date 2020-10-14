@@ -1,10 +1,15 @@
 body {
     width: 100vw;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hide {
+    display: none;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0px;
+    height: 85%;
+    width: 90px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -15,7 +20,7 @@ body {
     padding-top: 60px;
     margin-top: 0;
     z-index: 100;
-    opacity: .99;
+    opacity: .8;
 }
   
 .sidenav a {
@@ -52,7 +57,7 @@ body {
     cursor: pointer;
 }
 
-.fab {
+.fab, .far {
     font-size: 3.5rem;
     margin: 40px auto;
 }
@@ -64,6 +69,7 @@ body {
     top: 0px;
     z-index: 100; 
     width: 100%;
+    font-size: 20px;
 }
 
 .nav-link:hover {
@@ -194,6 +200,10 @@ hr {
     border-radius: 10px;
 }
 
+#imageDiv {
+    position: relative;
+}
+
 .carousel-container {
     display: grid;
     place-items: center;
@@ -201,7 +211,7 @@ hr {
 
 .carousel-card {
     height: 40rem;
-    width: 65%;
+    width: 90%;
     border-radius: .5%;
     border: 10px solid black;
 }
@@ -214,13 +224,45 @@ hr {
     color: #434343;
 }
 
+.info {
+    height: 40rem;
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    top: 155px;
+    left: 63px;
+    background-color: pink;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 0;
+    z-index: 100;
+    opacity: .8;
+}
+
+.description {
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    padding: 150px;
+    letter-spacing: .2rem;
+}
+
+#link {
+    font-size: 26px;
+}
+
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
     font-size: 4rem;
     color: #ECE2B2;
 }
 
 .contact {
-    margin-left: 70px;
+    margin-left: 100px;
+}
+
+.label {
+    margin-left: 0;
 }
 
 .form {
@@ -259,6 +301,10 @@ hr {
         font-size: 2rem;
     }
 
+    .sidenav {
+        margin-top: 67px;
+    }
+
     .img-responsive {
         width: 100%;
         margin: auto;
@@ -289,6 +335,31 @@ hr {
     .carousel-card {
         height: 396px;
     }
+
+    .description {
+        text-align: center;
+        font-size: 22px;
+        padding: 0;
+        letter-spacing: .2rem;
+        overflow: auto;
+    }    
+
+    .info {
+        height: 396px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 67px;
+        left: 0;
+        background-color: pink;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        margin-top: 0;
+        z-index: 100;
+        opacity: .8;
+    }
+    
 
     .functions {
         position: absolute;

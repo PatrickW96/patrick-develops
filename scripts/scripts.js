@@ -119,16 +119,19 @@ $(document).ready(function() {
         if (count == carousel()[count].image.number) {
             $('#carousel').attr('src' , carousel()[count].image.source);
             $(`#projectName`).text(carousel()[count].image.projectName);
-            $(`.description`).text(carousel()[count].image.description)
+            $(`.description`).text(carousel()[count].image.description);
+            // $(`#link`).attr('href' , carousel()[count].image.appHostSite);
         };
     };
 
     function openNav() {
         $('#mySideNav').width('215px');
-    }
+        $('.follow-tab').addClass('hide');
+    };
 
     function closeNav() {
         $('#mySideNav').width('0px');
+        $('.follow-tab').removeClass('hide');
     }
 
     function sidebarHeight(position) {
@@ -136,6 +139,14 @@ $(document).ready(function() {
             $('#mySideNav').css("margin-top" , "0");
         } else {
             $('#mySideNav').css("margin-top" , "4.6%");
-        }
-    }
+        };
+
+        if ($(window).width() < 768) {
+            if (position < 568) {
+                $('#mySideNav').css("margin-top" , "0");
+            } else {
+                $('#mySideNav').css("margin-top" , "67px");
+            };
+        };
+    };
 });

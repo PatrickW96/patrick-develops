@@ -6,6 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />        <link rel="stylesheet" href="css/styles.css">
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -16,12 +17,13 @@
 
         <div id="mySideNav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <a href="#contact-me"><i class="far fa-paper-plane" id="paper-plane"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-github"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
+        </div>
 
-          <div class="follow-tab"><i class="fas fa-shoe-prints"></i></div>
+        <div class="follow-tab"><i class="fas fa-shoe-prints"></i></div>
 
     <!-- START MAIN HEADER -->
         <header class="background">    
@@ -31,7 +33,7 @@
                     <h3 class="home-card h3">@patdevelops</h3>
                     <h5 class="home-card h5 pt-3">Changing the world one website at a time.</h5> 
                     <a href="#about"></a><button rold="button" id="learnMoreBtn" class="btn home-card p-2 my-3 mx-1">Learn More</button></a>
-                    <a href="#contact"><button rold="button" id="contactBtn" class="btn home-card p-2 my-3 mx-1">Get in Contact</button></a>
+                    <a href="#contact-me"><button rold="button" id="contactBtn" class="btn home-card p-2 my-3 mx-1">Get in Contact</button></a>
                 </div>
 
                 <div class="container bio-image-container col-md-5 ml-md-5 my-2" id="headerCol2">
@@ -60,7 +62,7 @@
                         </li>  
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact-me">Contact</a>
                         </li>     
                         
                         <li class="nav-item">
@@ -135,11 +137,16 @@
 
             <hr>
 
-        <!-- START RECENT PROJECTS CAROUSEL -->
-          <div class="conatiner">
-            <div class="form" id="imageDiv">
+     <!-- START RECENT PROJECTS CAROUSEL -->
+          <div class="conatiner" id="imageDiv">
+            <div class="form">
                 <h2 class="text-center my-md-5"><span class="heading">Recent Projects</span></h2>
                 <img class="img-responsive w-md-75 my-3 p-0 carousel-card" id="carousel" src="images/javascript-quiz.jpg" alt="Screenshot of a recent todo planner I created.">
+                
+                <div id="carouselInfo" class="info">
+                    <div class="description">"JavaScript Quiz" is a quick quiz application that showcases my ability to manipulate the DOM using Vanilla JS</div>
+                    <a id="link" class="form">Check it Out!</a>
+                </div>        
             </div>
 
             <div class="container-fluid form mb-5">
@@ -151,12 +158,12 @@
                 </div>
             </div>
           </div>
-        <!-- END RECENT PROJECTS CAROUSEL -->
+    <!-- END RECENT PROJECTS CAROUSEL -->
 
         <hr>
 
-        <!-- Start Contact Input -->
-            <div class="container p-3 m-auto w-75" id="contact">
+    <!-- Start Contact Input -->
+            <div class="container p-3 m-auto w-75" id="contact-me">
                 <header class="row">
                     <h2 class="col form mr-md-5"><span class="heading p-2">Contact</span></h2>
                 </header>
@@ -166,14 +173,14 @@
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
                                 <label class="label">Name</label>
-                                <input type="name" class="form-control form" placeholder="Name">
+                                <input type="name contact" class="form-control form" placeholder="Name">
                             </div>
                         </section>
 
                         <section class="form-group row mx-1 w-75">
                             <div class="col-md-10">
                                 <label class="label">Email</label>
-                                <input type="email" class="form-control form" placeholder="Email">
+                                <input type="email contact" class="form-control form" placeholder="Email">
                             </div>
                         </section>
 
@@ -189,7 +196,7 @@
 
                 </section>
             </div>
-        <!-- End Contact Input -->
+    <!-- End Contact Input -->
         </main>
 
         <footer>
