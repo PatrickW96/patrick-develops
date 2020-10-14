@@ -1,5 +1,6 @@
 $(document).ready(function() {
     let count = 0;
+    let counter = 0;
 
     // Using scroll event to animate elements when user scrolls down the page
     $(window).scroll(scrollAnimation);
@@ -11,11 +12,12 @@ $(document).ready(function() {
     // Next/Prev button click events
     $('#nextBtn').click(nextBtn);
     $('#prevBtn').click(prevBtn);
-    
+
+    $('#projectName').click(toggleInfo);    
     
     function scrollAnimation() {
         const topPosition = $(document).scrollTop();
-        console.log(topPosition)
+        // console.log(topPosition)
         sidebarHeight(topPosition)
 
         if (topPosition > 730) {
@@ -51,7 +53,7 @@ $(document).ready(function() {
                     number : 0,
                     projectName : "JavaScript Quiz",
                     source : "images/javascript-quiz.jpg",
-                    description : `"JavaScript Quiz" is a quick quiz application that showcases my ability to manipulate the DOM using Vanilla JS`,
+                    description : `JavaScript Quiz is a quick quiz application that showcases my ability to manipulate the DOM using Vanilla JS`,
                     appHostSite : "https://patrickw96.github.io/javascript-quiz/"    
                 }
             }, 
@@ -61,7 +63,7 @@ $(document).ready(function() {
                     number : 1,
                     projectName : "Plan Ahead",
                     source : "images/plan-ahead.jpg",
-                    description : `"Plan ahead" is a simple daily todo tracker made and coded using jQuery library to manipulate the DOM. The app also utilized
+                    description : `Plan ahead is a simple daily todo tracker made and coded using jQuery library to manipulate the DOM. The app also utilized
                     a users local storage to save todo's on refresh.`,
                     appHostSite : "https://patrickw96.github.io/plan-ahead/"    
                 }
@@ -83,7 +85,7 @@ $(document).ready(function() {
                     number : 3,
                     projectName : "What's the Weather",
                     source : "images/weather.jpg",
-                    description : `"What's the Weather" is a weather dashboard application created using jQuery. Ajax requests are made to the OpenWeatherApi
+                    description : `What's the Weather is a weather dashboard application created using jQuery. Ajax requests are made to the OpenWeatherApi
                     based on user search to extract JSON files which were disected and used to populate cards with useful information.`,
                     appHostSite : "https://patrickw96.github.io/whats-the-weather/"    
                 }
@@ -104,9 +106,7 @@ $(document).ready(function() {
         carouselFunction();
     };
 
-    function prevBtn(event) {
-        let click = event.type;
-
+    function prevBtn() {
         if (count > 0) {
             count--;
         } else {
@@ -120,7 +120,7 @@ $(document).ready(function() {
             $('#carousel').attr('src' , carousel()[count].image.source);
             $(`#projectName`).text(carousel()[count].image.projectName);
             $(`.description`).text(carousel()[count].image.description);
-            // $(`#link`).attr('href' , carousel()[count].image.appHostSite);
+            $(`#link`).attr('href' , carousel()[count].image.appHostSite);
         };
     };
 
@@ -148,5 +148,24 @@ $(document).ready(function() {
                 $('#mySideNav').css("margin-top" , "67px");
             };
         };
+    };
+
+    function toggleInfo() {
+         if (counter == 1){
+             counter--;
+         } else {
+             counter++;
+         }
+
+        console.log(counter)
+
+        switch(counter) {
+            case 0: 
+                res = $('.info').addClass('hide');
+                break;
+            case 1: 
+                res = $('.info').removeClass('hide');
+                break;
+        };                
     };
 });
