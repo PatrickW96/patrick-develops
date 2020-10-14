@@ -150,6 +150,9 @@ hr {
     margin-right: 20px;
 }  
 
+.carousel-btns:hover {
+    color: #434343;
+}
 
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
     font-size: 4rem;
@@ -204,8 +207,9 @@ hr {
         margin-bottom: 15px !important;
     }
 
-    .carousel-functions {
+    .carousel-btns {
         font-size: 2.5rem;
+        width: 60px;
     }
     
     .carousel-name {
@@ -215,7 +219,7 @@ hr {
     .carousel-card {
         height: 396px;
     }
-    
+
     .form-group {
         width: 170% !important;
     }

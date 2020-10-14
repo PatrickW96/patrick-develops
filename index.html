@@ -21,8 +21,8 @@
                     <h1 class="home-card h1">Patrick Whelan</h1>
                     <h3 class="home-card h3">@patdevelops</h3>
                     <h5 class="home-card h5 pt-3">Changing the world one website at a time.</h5> 
-                    <a href="#nav"></a><button rold="button" id="learnMoreBtn" class="btn home-card p-2 my-3 mx-1">Learn More</button></a>
-                    <a href="#nav"><button rold="button" id="contactBtn" class="btn home-card p-2 my-3 mx-1">Get in Contact</button></a>
+                    <a href="#about"></a><button rold="button" id="learnMoreBtn" class="btn home-card p-2 my-3 mx-1">Learn More</button></a>
+                    <a href="#contact"><button rold="button" id="contactBtn" class="btn home-card p-2 my-3 mx-1">Get in Contact</button></a>
                 </div>
 
                 <div class="container bio-image-container col-md-5 ml-md-5 my-2" id="headerCol2">
@@ -43,15 +43,15 @@
                 <div class="collapse navbar-collapse" id="collapseNavToggler"> 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Recent Projects</a>
+                            <a class="nav-link" href="#imageDiv">Recent Projects</a>
                         </li>  
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>     
                         
                         <li class="nav-item">
@@ -77,7 +77,7 @@
 <!-- START PAGE MAIN CONTENT -->
         <main class="container-fluid">
     <!-- START ABOUT ME SECTION -->
-            <section class="about-me-section row form">
+            <section class="about-me-section row form" id="about">
                 <h2 class="text-center my-5 col-12"><span class="heading">About Me</span></h2>
 
                 <div class="container about-me col-md-5 hide" id="fact-one">
@@ -129,14 +129,15 @@
         <!-- START RECENT PROJECTS CAROUSEL -->
             <div class="form" id="imageDiv">
                 <h2 class="text-center my-md-5"><span class="heading">Recent Projects</span></h2>
-                <img class="img-responsive w-md-100 my-3 p-0 carousel-card" id="carousel" alt="Screenshot of a recent todo planner I created.">
+                <img class="img-responsive w-md-100 my-3 p-0 carousel-card" id="carousel" src="images/javascript-quiz.jpg" alt="Screenshot of a recent todo planner I created.">
             </div>
 
             <div class="container-fluid form mb-5">
                 <div class="row">
-                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-left col-md-2" id="prevBtn"></i>
-                    <figcaption class="m-1 carousel-name h2 col-md-7 text-center" id="projectName"><b>What's the Weather</b></figcaption>
-                    <i class="m-1 btn carousel-functions fas fa-arrow-alt-circle-right col-md-2" id="nextBtn"></i>
+                    <i class="m-1 carousel-btns fas fa-arrow-alt-circle-left col-2" id="prevBtn"></i>
+                    <div class="m-1 carousel-name h2 col-7 text-center"><b id="projectName">JavaScript Quiz</b></div>
+                    <i class="m-1 carousel-btns fas fa-arrow-alt-circle-right col-2" id="nextBtn"></i>
+                    <figcaption id="description"></figcaption>
                 </div>
             </div>
         <!-- END RECENT PROJECTS CAROUSEL -->
@@ -144,7 +145,7 @@
         <hr>
 
         <!-- Start Contact Input -->
-            <div class="container p-3 m-auto w-75">
+            <div class="container p-3 m-auto w-75" id="contact">
                 <header class="row">
                     <h2 class="col form mr-md-5"><span class="heading p-2">Contact</span></h2>
                 </header>

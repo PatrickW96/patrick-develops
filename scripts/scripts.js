@@ -96,21 +96,25 @@ $(document).ready(function() {
         if (count > 3) {
             count = 0;
         };
-        console.log(count);
-        console.log(carousel()[count].image.number)
+        carouselFunction();
     };
 
-    function prevBtn() {
+    function prevBtn(event) {
+        let click = event.type;
+
         if (count > 0) {
             count--;
         } else {
             count = 3;
-        }
-        console.log(count);
-        console.log(carousel()[count].image.number)
+        };
+        carouselFunction();
     };
 
-    if (count == carousel()[count].image.number) {
-        $('#carousel').attr('src' , carousel()[count].image.source);
-    }
+    function carouselFunction() {
+        if (count == carousel()[count].image.number) {
+            $('#carousel').attr('src' , carousel()[count].image.source);
+            $(`#projectName`).text(carousel()[count].image.projectName);
+            $(`#description`).text(carousel()[count].image.description);
+        };
+    };
 });
