@@ -114,7 +114,6 @@ $(document).ready(function() {
         if (count == carousel()[count].image.number) {
             $('#carousel').attr('src' , carousel()[count].image.source);
             $(`#projectName`).text(carousel()[count].image.projectName);
-            $(`#description`).text(carousel()[count].image.description);
         };
     };
 });
