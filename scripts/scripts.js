@@ -4,14 +4,19 @@ $(document).ready(function() {
     // Using scroll event to animate elements when user scrolls down the page
     $(window).scroll(scrollAnimation);
 
+    // Sidebar tab click event
+    $('.follow-tab').click(openNav);
+    $('.closebtn').click(closeNav);
+
     // Next/Prev button click events
     $('#nextBtn').click(nextBtn);
     $('#prevBtn').click(prevBtn);
     
     
     function scrollAnimation() {
-        var topPosition = $(document).scrollTop();
-        // console.log(topPosition)
+        const topPosition = $(document).scrollTop();
+        console.log(topPosition)
+        sidebarHeight(topPosition)
 
         if (topPosition > 730) {
             $('#fact-one').removeClass('hide')
@@ -114,6 +119,23 @@ $(document).ready(function() {
         if (count == carousel()[count].image.number) {
             $('#carousel').attr('src' , carousel()[count].image.source);
             $(`#projectName`).text(carousel()[count].image.projectName);
+            $(`.description`).text(carousel()[count].image.description)
         };
     };
+
+    function openNav() {
+        $('#mySideNav').width('215px');
+    }
+
+    function closeNav() {
+        $('#mySideNav').width('0px');
+    }
+
+    function sidebarHeight(position) {
+        if (position < 568) {
+            $('#mySideNav').css("margin-top" , "0");
+        } else {
+            $('#mySideNav').css("margin-top" , "4.6%");
+        }
+    }
 });

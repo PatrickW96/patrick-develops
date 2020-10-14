@@ -2,6 +2,61 @@ body {
     width: 100vw;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 0;
+    z-index: 100;
+    opacity: .99;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.follow-tab {
+    width: 75px;
+    height: 75px;
+    background-color: #FFA9C4;
+    position: fixed;
+    top: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 3.3rem;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.fab {
+    font-size: 3.5rem;
+    margin: 40px auto;
+}
+
 .navbar {
     background: #EBEBEE;
     opacity: .8;
@@ -94,7 +149,6 @@ img {
 }
 
 .about-me-section {
-    /* background-color: #eee; */
     border-radius: 10px;
 }
 
@@ -140,8 +194,14 @@ hr {
     border-radius: 10px;
 }
 
+.carousel-container {
+    display: grid;
+    place-items: center;
+}
+
 .carousel-card {
     height: 40rem;
+    width: 65%;
     border-radius: .5%;
     border: 10px solid black;
 }
@@ -157,6 +217,10 @@ hr {
 .fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right {
     font-size: 4rem;
     color: #ECE2B2;
+}
+
+.contact {
+    margin-left: 70px;
 }
 
 .form {
@@ -187,6 +251,12 @@ hr {
 @media screen and (max-width: 768px) {
     main {
         width: 99% !important;
+    }
+
+    .follow-tab {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
     }
 
     .img-responsive {
@@ -220,9 +290,25 @@ hr {
         height: 396px;
     }
 
+    .functions {
+        position: absolute;
+        top: 480px;
+        left: 12px;
+    }    
+
+    .border {
+        width: 90%;
+        height: 400px;
+        font-size: 16px;
+    }
+
     .form-group {
         width: 170% !important;
     }
+
+    .contact {
+        margin-left: 0;
+    }    
 
     #submitBtn {
         margin-left: 70px;
