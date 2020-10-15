@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('#nextBtn').click(nextBtn);
     $('#prevBtn').click(prevBtn);
 
-    $('#projectName').click(toggleInfo);    
+    $('.carousel-card').hover(toggleInfo);    
     
     function scrollAnimation() {
         const topPosition = $(document).scrollTop();

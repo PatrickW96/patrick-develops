@@ -53,7 +53,7 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 3.3rem;
-    z-index: 101;
+    z-index: 200;
     cursor: pointer;
 }
 
@@ -214,6 +214,7 @@ hr {
     width: 90%;
     border-radius: .5%;
     border: 10px solid black;
+    cursor: pointer;
 }
 
 .carousel-name {
@@ -239,6 +240,22 @@ hr {
     z-index: 99;
     opacity: .9;
 }
+
+.images {
+    height: 40rem;
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 63px;
+    background-color: pink;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 0;
+    z-index: 99;
+}
+
 
 .description {
     display: grid;
@@ -366,6 +383,23 @@ hr {
         z-index: 99;
         opacity: .9;
     }
+
+    .images {
+        height: 396px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 52px;
+        left: 0;
+        background-color: pink;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        margin-top: 0;
+        z-index: 99;
+        opacity: .9;
+    }
+
     
 
     .functions {
